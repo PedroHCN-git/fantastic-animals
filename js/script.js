@@ -1,7 +1,7 @@
 // modo de importação quando existe ao menos uma exportação com default
 import ScrollSuave from "./modules/scroll-suave.js";
 import initAnimacaoScroll from "./modules/animacao-scrroll.js";
-import initAccordion from "./modules/accordion.js";
+import Accordion from "./modules/accordion.js";
 import initTabNav from "./modules/tabnav.js";
 import initModal from "./modules/modal.js";
 import initTooltip from "./modules/tooltip.js";
@@ -14,6 +14,8 @@ import initFetchBtc from "./modules/fetch-bitcoin.js";
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
+const accordion = new Accordion('[data-anime="accordion"] dt')
+accordion.init();
 
 initFetchBtc();
 initFetchAnimais();
@@ -23,5 +25,4 @@ initDropdownMenu();
 initTooltip();
 initModal();
 initTabNav();
-initAccordion();
 initAnimacaoScroll();
