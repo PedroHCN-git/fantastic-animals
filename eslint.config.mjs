@@ -2,7 +2,7 @@ export default [
   {
     rules: {
       // 'no-console': 'error'
-      indent: ['error', 4],
+      indent: ['error', 2],
       'keyword-spacing': 'error',
       'no-multiple-empty-lines': 'error',
       'eol-last': ['error', 'always'],
