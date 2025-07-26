@@ -19,7 +19,7 @@ export default class TabNav {
     });
   }
 
-  initTabNav(){
+  init(){
     if (this.tabMenu.length && this.tabContent.length){
       this.activeTab(0);
       this.addEventTabMenu();
