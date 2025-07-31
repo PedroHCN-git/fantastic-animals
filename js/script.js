@@ -27,7 +27,7 @@ const tooltip = new ToolTip('[data-tooltip]');
 tooltip.init();
 
 initFetchBtc();
-initFetchAnimais();
+initFetchAnimais('../../animaisapi.json' ,'.grid-numeros');
 initFuncionamento();
 initMenuMobile();
 initDropdownMenu();
