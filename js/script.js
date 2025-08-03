@@ -4,7 +4,7 @@ import ScrollAnima from "./modules/animacao-scrroll.js";
 import Accordion from "./modules/accordion.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
 import MenuMobile from "./modules/menu-mobile.js";
-import initFuncionamento from "./modules/funcionamento.js";
+import Funcionamento from "./modules/funcionamento.js";
 import fetchAnimais from "./modules/fetch-animais.js";
 import fetchBtc from "./modules/fetch-bitcoin.js";
 import TabNav from "./modules/tabnav.js";
@@ -35,6 +35,8 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile("[data-menu='button']", "[data-menu='list']");
 menuMobile.init();
 
+const funcionamento = new Funcionamento("[data-semana]");
+funcionamento.init();
+
 fetchBtc('https://blockchain.info/ticker', '.doacao');
 fetchAnimais('../../animaisapi.json' ,'.grid-numeros');
-initFuncionamento();
